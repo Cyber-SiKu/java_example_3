@@ -3,10 +3,11 @@ package Object;
 /**
  * Created by siku on 3/25/17.
  */
-public class People extends BaseObject implements Attack_interface{
+public abstract class Person extends BaseObject implements Attack_interface {
     int value_attack_;
     int count_;
-    People(int HP,int diamiond,int oil,int x,int y,int value_attack,int count){
+
+    Person(int HP, int diamiond, int oil, int x, int y, int value_attack, int count){
         super(HP,diamiond,oil,x,y);
         this.value_attack_ = value_attack;
         this.count_ = count;
@@ -30,9 +31,11 @@ public class People extends BaseObject implements Attack_interface{
     }
 }
 
-class TestBaseObject{
-    public static void main(String []argv){
-        People p = new People(1,2,3,4,5,6,7);
-        System.out.println(p);
-    }
-}
+//test
+
+//class TestBaseObject{
+//    public static void main(String []argv){
+//        Person p = new Person(1,2,3,4,5,6,7);
+//        System.out.println(p);
+//    }
+//}
