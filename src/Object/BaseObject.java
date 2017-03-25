@@ -6,6 +6,8 @@ import BaseInterface.Move_interface;
  * Created by siku on 3/25/17.
  */
 public abstract class BaseObject implements Move_interface {
+    abstract String getClassify(); //TODO: get the subclass's classify
+
     private int HP_;
     private Resource consume_;
     //2d coordinate
