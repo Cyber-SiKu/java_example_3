@@ -12,6 +12,11 @@ public class Resource {
         this.oil_ = oil;
     }
 
+    Resource(){
+        this.diamiond_ = 1;
+        this.oil_ = 2;
+    }
+
     public int getDiamiond_(){
         return this.diamiond_;
     }

@@ -7,6 +7,11 @@ public abstract class Person extends BaseObject implements Attack_interface {
     int value_attack_;
     int count_;
 
+    Person(){
+        this.value_attack_ = 1;
+        this.count_ = 2;
+    }
+
     Person(int HP, int diamiond, int oil, int x, int y, int value_attack, int count){
         super(HP,diamiond,oil,x,y);
         this.value_attack_ = value_attack;
