@@ -4,8 +4,13 @@ package Object;
  * Created by siku on 3/25/17.
  */
 public class Resource {
-    private int diamiond_ = 0;
-    private int oil_ = 0;
+    private int diamiond_;
+    private int oil_;
+
+    Resource(){
+        this.diamiond_ = 1;
+        this.oil_ = 2;
+    }
 
     Resource(int diamiond,int oil){
         this.diamiond_ = diamiond;

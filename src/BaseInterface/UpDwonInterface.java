@@ -5,5 +5,5 @@ package BaseInterface;
  */
 public interface UpDwonInterface {
     void uprising(int z);
-    void downLanding(int x,int y);
+    void downLanding();
 }
