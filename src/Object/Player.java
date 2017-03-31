@@ -11,6 +11,22 @@ public class Player {
     private int NumberPeople_;
     private Resource resource_;
     private ArrayList<Person> people;
+
+    public Resource getResource_() {
+        return this.resource_;
+    }
+
+    protected  void setResource_(Resource re){
+        this.resource_ = re;
+    }
+
+    protected void setMaxNumberPeople_(int maxNumberPeople_) {
+        MaxNumberPeople_ += maxNumberPeople_;
+    }
+
+    protected int getNumberPeople_() {
+        return NumberPeople_;
+    }
 }
 
 class TestPlayer{

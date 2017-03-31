@@ -52,6 +52,10 @@ public abstract class BaseObject implements Move_interface {
     public void setZ_(int z) {
         this.z_ = z;
     }
+
+    public Resource getConsume_() {
+        return this.consume_;
+    }
 }
 
 

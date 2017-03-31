@@ -31,6 +31,8 @@ public abstract class Person extends BaseObject implements Attack_interface {
                 "The number of occupied population: "+this.count_);
         return str;
     }
+
+
 }
 
 //test

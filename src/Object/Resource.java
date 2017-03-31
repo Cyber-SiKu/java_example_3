@@ -35,6 +35,14 @@ public class Resource {
         String str = new String("oil: " + this.oil_ + "; diamiod: "+this.diamiond_);
         return str;
     }
+
+    public boolean grearter(Resource re){
+        return this.diamiond_ >= re.diamiond_ && this.oil_ >= re.oil_;
+    }
+
+    public Resource minus(Resource re){
+        return new Resource(this.diamiond_-re.diamiond_,this.oil_-re.oil_);
+    }
 }
 class TestResource{
     public static void main(String [] argvs){

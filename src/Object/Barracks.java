@@ -20,4 +20,14 @@ public class Barracks extends BaseObject implements UpDwonInterface {
     String getClassify() {
         return "Barracks";
     }
+
+    boolean CreateMarines(Player player,Marines marines){
+        if (player.getResource_().grearter(marines.getConsume_())){
+            //player hold enough resource
+            player.setResource_(player.getResource_().minus(marines.getConsume_()));
+            return true;
+        }else{
+            return false;
+        }
+    }
 }

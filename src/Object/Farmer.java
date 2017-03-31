@@ -4,15 +4,19 @@ package Object;
  * Created by siku on 3/27/17.
  */
 public class Farmer extends Person {
-    int z_;     //z coordinate
 
     Farmer(){
         super();
-        this.z_ = 0;
     }
-    Farmer(int HP, int diamond,int oil,int x,int y,int z);
+
+    Farmer(int HP, int diamond,int oil,int x,int y,int z,
+           int value_attack, int count){
+        super(HP,diamond,oil,x,y,z,value_attack,count);
+    }
+
     @Override
     String getClassify() {
         return "Farmer";
     }
+
 }
